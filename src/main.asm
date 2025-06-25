@@ -55,7 +55,7 @@ prompt:
     mov rax, 1
     mov rdi, 1
     mov rsi, message
-    mov rdx, 6
+    mov rdx, 8
     syscall
     ret
 

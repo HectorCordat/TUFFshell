@@ -6,7 +6,7 @@ my_forkaka:
     mov rax, 57
     syscall
     cmp rax, 0
-    jz pddy
+    jz my_child
     mov rdi, rax
     mov rax, 61
     mov rsi, 0
@@ -15,7 +15,7 @@ my_forkaka:
     syscall
     ret
 
-pddy:
+my_child:
     call my_execve
     mov rdi, 0
     jmp my_exit
