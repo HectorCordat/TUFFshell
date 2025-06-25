@@ -1,0 +1,5 @@
+*.o
+.vscode
+a.out
+hello.c
+TUFFshell
