@@ -7,6 +7,7 @@ TUFFshell:
 	$(NASM) -f elf64 src/exit.asm
 	$(NASM) -f elf64 src/main.asm
 	$(NASM) -f elf64 src/child.asm
+	$(NASM) -f elf64 src/input.asm
 	$(LD) src/*.o -o $(BIN)
 	$(MV) src/*.o obj/
 

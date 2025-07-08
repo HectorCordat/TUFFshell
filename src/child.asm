@@ -9,10 +9,11 @@ my_forkaka:
     jz my_child
     mov rdi, rax
     mov rax, 61
-    mov rsi, 0
+    lea rsi, [rel status]
     mov rdx, 0
     mov r10, 0
     syscall
+    mov rax, [status]
     ret
 
 my_child:
